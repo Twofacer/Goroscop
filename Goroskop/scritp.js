@@ -1,7 +1,11 @@
 function play()
 {
     var year = document.getElementById("myYear").value;
-    alert("Символ года: "+getZoo(year)+", стихия: "+getColor(year,1)+", цвет: "+getColor(year,0));
+    document.getElementById('yearRes').innerHTML= year;
+    document.getElementById('zooRes').innerHTML= getZoo(year);
+    document.getElementById('colorRes').innerHTML= getColor(year,0);
+    document.getElementById('stRes').innerHTML= getColor(year,1);
+
 }
 
 function year_plus(year)
@@ -45,7 +49,7 @@ function getColor(year, info){
         case 6: color="красный";st="огонь";break;
         case 7: color="красный";st="огонь";break;
         case 8: color="коричневый";st="земля";break;
-        case 9: color="бкоричневый";st="земля";break;
+        case 9: color="коричневый";st="земля";break;
     }
     if (info==0)
     return color;

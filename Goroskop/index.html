@@ -9,14 +9,23 @@
     <script src="./scritp.js" type="text/javascript"></script>
 </head>
 <body>
-    <h1>Happy new Year !</h1>
+   <div class="content_holder"> 
+       <h1>Happy new Year !</h1>
+    <h2>Восточный гороскоп</h2>
     <p>
         <input type="text" id="myYear" value="200">
     </p>
+    <div>
+        <p>Год:<span id='yearRes'> </span></p>
+        <p>Символ года:<span id='zooRes'> </span></p>
+        <p>Цвет:<span id='colorRes'> </span></p>
+        <p>Стихия:<span id='stRes'> </span></p>
+    </div>
     <p>
         <button onclick="play()">
             Символ года
         </button>
     </p>
+</div>
 </body>
 </html>
