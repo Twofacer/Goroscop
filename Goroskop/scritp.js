@@ -5,7 +5,22 @@ function play()
     document.getElementById('zooRes').innerHTML= getZoo(year);
     document.getElementById('colorRes').innerHTML= getColor(year,0);
     document.getElementById('stRes').innerHTML= getColor(year,1);
-
+    
+ if(getColor(year,0) =='красный') {
+    document.body.style.background = 'red';
+ }
+ if(getColor(year,0) =='коричневый') {
+    document.body.style.background = 'brown';
+ }
+ if(getColor(year,0) =='белый') {
+    document.body.style.background = 'white';
+ }
+ if(getColor(year,0) =='зеленый') {
+    document.body.style.background = 'green';
+ }
+ if(getColor(year,0) =='черный') {
+    document.body.style.background = 'gray';
+ }
 }
 
 function year_plus(year)
